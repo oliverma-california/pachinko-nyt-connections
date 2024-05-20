@@ -92,31 +92,34 @@ function GameControlButtonsPanel({
   return (
     <div className="grid grid-cols-3 gap-4">
       <Button
+        className="h-14 text-2xl bg-[url('https://t4.ftcdn.net/jpg/01/84/26/95/360_F_184269531_YBEiKECRlGl0Y6Gnwhb2pB1lLhCD0cVO.jpg')]"
         disabled={isGameOver}
         variant="secondary"
         onClick={() =>
           setShuffledRows(shuffleGameData({ gameData: shuffledRows }))
         }
       >
-        <Shuffle className="h-4 w-4 mr-2" strokeWidth={1} />
-        <p className="select-none">Shuffle</p>
+        <Shuffle className="h-8 w-8 mr-2" strokeWidth={1} />
+        <p className="select-none font-sedan-sc">Shuffle</p>
       </Button>
       <Button
+        className="h-14 text-2xl bg-[url('https://t4.ftcdn.net/jpg/01/84/26/95/360_F_184269531_YBEiKECRlGl0Y6Gnwhb2pB1lLhCD0cVO.jpg')]"
         size="deselectallsize"
         disabled={isGameOver}
         variant="secondary"
         onClick={deselectAll}
       >
-        <Undo className="h-4 w-4 mr-2" strokeWidth={1} />
-        <p className="select-none">Deselect All</p>
+        <Undo className="h-8 w-8 mr-2" strokeWidth={1} />
+        <p className="select-none font-sedan-sc">Deselect All</p>
       </Button>
       <Button
+        className="h-14 text-2xl bg-[url('https://t4.ftcdn.net/jpg/01/84/26/95/360_F_184269531_YBEiKECRlGl0Y6Gnwhb2pB1lLhCD0cVO.jpg')]"
         variant="submit"
         onClick={submitCandidateGuess}
         disabled={isGameOver || guessCandidate.length !== categorySize}
       >
-        <SendHorizontal className="h-4 w-4 mr-2" strokeWidth={1} />
-        <p className="select-none">Submit</p>
+        <SendHorizontal className="h-4 w-4 mr- stroke-black" strokeWidth={1} />
+        <p className="select-none font-sedan-sc text-black">Submit</p>
       </Button>
     </div>
   );

@@ -72,6 +72,9 @@ module.exports = {
     },
     fontFamily: {
       "space-mono": ["Space Mono"],
+      "sedan-sc": ["Sedan SC"],
+      "playfair": ["Playfair Display"],
+      "dance": ["Dancing Script"],
     },
   },
   plugins: [require("tailwindcss-animate")],

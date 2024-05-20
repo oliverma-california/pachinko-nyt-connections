@@ -10,7 +10,7 @@ function App() {
   return (
     <PuzzleDataProvider>
       <GameStatusProvider>
-        <div className="wrapper">
+        <div className="wrapper bg-[url('./yandong.jpg')] bg-cover backdrop-brightness-50">
           <Toaster />
           <Header />
           <Game />

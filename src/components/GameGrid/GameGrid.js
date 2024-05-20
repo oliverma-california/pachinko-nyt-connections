@@ -50,8 +50,8 @@ export function SolvedWordRow({ ...props }) {
     <animated.div style={springProps}>
       {!isImageAvailable ? (
         <div style={{ backgroundColor: color, borderRadius: 8 }}>
-          <p className="font-bold pt-2 pl-4">{props.category}</p>
-          <p className="font-thin pb-2 pl-4">{props.words.join(", ")}</p>
+          <p className="font-bold font-playfair pt-2 pl-4">{props.category}</p>
+          <p className="font-thin font-playfair pb-2 pl-4">{props.words.join(", ")}</p>
         </div>
       ) : (
         <Popover>
@@ -66,8 +66,8 @@ export function SolvedWordRow({ ...props }) {
                   View More
                 </Badge>
               )}
-              <p className="font-bold pt-2 pl-4">{props.category}</p>
-              <p className="font-thin pb-2 pl-4">{props.words.join(", ")}</p>
+              <p className="font-bold font-playfair pt-2 pl-4">{props.category}</p>
+              <p className="font-thin font-playfair pb-2 pl-4">{props.words.join(", ")}</p>
             </div>
           </PopoverTrigger>
           <PopoverContent>

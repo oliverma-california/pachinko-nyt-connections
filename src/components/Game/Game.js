@@ -54,7 +54,7 @@ function Game() {
     }, modalDelay);
 
     if (isGameWon) {
-      setShowConfetti(true);
+      // setShowConfetti(true);
     }
 
     return () => window.clearTimeout(delayModalOpen);
@@ -62,7 +62,7 @@ function Game() {
 
   return (
     <>
-      <h3 className="text-xl text-center mt-4">
+      <h3 className="text-3xl text-center my-4 font-playfair text-white">
         Create {numCategories} groups of {categorySize}
       </h3>
 
@@ -104,7 +104,7 @@ function Game() {
             />
           </>
         ) : (
-          <ViewResultsModal />
+          <div></div>
         )}
       </div>
     </>

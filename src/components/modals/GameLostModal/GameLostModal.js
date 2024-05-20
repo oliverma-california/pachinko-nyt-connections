@@ -12,7 +12,6 @@ function GameLostModal({ open }) {
     <BaseModal
       title="You lost."
       initiallyOpen={open}
-      footerElements={<ShareScoreButton />}
       showActionButton={false}
     >
       <div className="grid gap-y-2">
@@ -23,7 +22,6 @@ function GameLostModal({ open }) {
           <SolvedWordRow key={obj.category} {...obj} />
         ))}
       </div>
-      <CountdownToNextPuzzle />
     </BaseModal>
   );
 }
