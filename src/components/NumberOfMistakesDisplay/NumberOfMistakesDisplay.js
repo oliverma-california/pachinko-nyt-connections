@@ -3,6 +3,7 @@ import { range } from "../../lib/utils";
 import { Circle, CircleSlash } from "lucide-react";
 import { MAX_MISTAKES } from "../../lib/constants";
 import { GameStatusContext } from "../../providers/GameStatusProvider";
+import pachinkoBall from "../../pachinkoball.png";
 
 function SingleMistakeDisplay({ isUsed }) {
   return (
@@ -10,7 +11,7 @@ function SingleMistakeDisplay({ isUsed }) {
       {isUsed ? (
         <CircleSlash className="h-8 w-8 mt-1 stroke-neutral-400" />
       ) : (
-        <img className="h-8 w-8 mt-1" src="https://media.discordapp.net/attachments/666450605564493828/1242054363057229884/pachinkoball.png?ex=664c70c4&is=664b1f44&hm=36a7818b54a8b91ccaf9547dbf91372b629c51f5da6570cfd275c2e1fc79deeb&=&format=webp&quality=lossless&width=700&height=700" />
+        <img className="h-8 w-8 mt-1" src={pachinkoBall} />
       )}
     </div>
   );
